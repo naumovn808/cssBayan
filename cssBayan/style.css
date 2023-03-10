@@ -1,0 +1,60 @@
+.container {
+    padding: 0 30px;
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+@media (min-width: 820) {
+   .container { 
+    padding: 0 50px;
+   }
+}
+
+.container:hover .icon{
+  opacity: 1;
+}
+.wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.img-bayan {
+    width: 100%;
+    height: 0;
+    object-fit: contain;
+    overflow: hidden;
+}
+
+input[type="radio"] {
+    width: 0;
+    height: 0;
+}
+
+input[type="radio"]:checked ~ .img-bayan {
+    height: 250px;
+    transition: height 0.5s ease-in-out;
+}
+
+input[type="radio"]:checked ~ label > .icon {
+    transform: rotate(90deg);
+}
+
+.line {
+    width: 100%;
+}
+
+.input-radio {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.icon {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 0;
+    transform: rotate(45deg);
+    transition: transform, 0.5s;
+    opacity: 0;
+}
