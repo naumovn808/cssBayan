@@ -34,6 +34,12 @@
     }
  }
 
+ @media screen and (min-width: 820px){ 
+    .img-bayan {
+        max-width: 450px;
+    }
+}
+
 @media screen and (any-hover: hover){ 
     .icon {
         opacity: 0;
@@ -64,8 +70,3 @@
  } 
 }  
 
-@media screen and (min-width: 820px){ 
-    .img-bayan {
-        max-width: 450px;
-    }
-}
