@@ -29,14 +29,14 @@
 
 @media screen and (min-width: 820px){ 
     .icon {
-        width: 50px;
-        height: 50px;
+        width: 3rem;
+        height: 3rem;
     }
  }
 
  @media screen and (min-width: 820px){ 
     .img-bayan {
-        max-width: 450px;
+        max-width: 25rem;
     }
 }
 
@@ -49,7 +49,7 @@
           opacity: 1;
         }
      
-        .container:hover .line-desc {
+        .container:hover .line-title {
             color: black;
         }
      }

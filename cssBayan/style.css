@@ -1,5 +1,5 @@
 .container {
-    padding: 0 30px;
+    padding: 0 1rem;
     max-width: 1220px;
     height: 100%;
     margin: 0 auto;
@@ -20,16 +20,17 @@
 
 .img-wrapper {
    width: 100%;
-   padding-top: 20px;
+   padding-top: 1rem;
+   padding-bottom: 2rem;
 }
 
 .img-bayan {
    display: block;
-   max-width: 350px;
+   max-width: 20rem;
    width: 100%;
    height: 0;
    object-fit: contain;
-   margin: 20px auto;
+   margin: 1rem auto;
 }
 
 input[type="radio"] {
@@ -61,8 +62,8 @@ input[type="radio"]:checked ~ .line-desc > .line-title {
     display: flex;
     width: 100%;
     justify-content: space-between;
-    margin-top: 1rem;
-    margin-bottom: -3.5rem;
+    margin-top: 1.5rem;
+    margin-bottom: -2.5rem;
 }
 
 .line-title {
@@ -80,7 +81,7 @@ input[type="radio"]:checked ~ .line-desc > .line-title {
     flex-direction: column;
     justify-content: space-between;
     overflow: hidden;
-    padding-bottom: 1rem;
+    margin-bottom: -1rem;
     transition: height 1s;
 }
 
