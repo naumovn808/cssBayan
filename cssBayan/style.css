@@ -1,29 +1,53 @@
 .container {
     padding: 0 30px;
-    max-width: 1080px;
+    max-width: 1220px;
+    height: 100%;
     margin: 0 auto;
 }
 
-@media (min-width: 820) {
-   .container { 
-    padding: 0 50px;
-   }
-}
-
-.container:hover .icon{
-  opacity: 1;
-}
 .wrapper {
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+}
+
+.bayan-title {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+@media screen and (min-width: 820px){ 
+    .bayan-title {
+        font-size: 4rem;
+        font-weight: 700;
+        margin-bottom: 1.5rem;
+        margin-top: 1.5rem;
+    }
+}
+
+@media screen and (min-width: 1780px){  
+    .bayan-title {
+        font-size: 6rem;
+        font-weight: 700;
+        margin-bottom: 3rem;
+        margin-top: 3rem;
+    }
+}
+
+.img-wrapper {
+   width: 100%;
+   padding-top: 20px;
 }
 
 .img-bayan {
-    width: 100%;
-    height: 0;
-    object-fit: contain;
-    overflow: hidden;
+   display: block;
+   max-width: 350px;
+   width: 100%;
+   height: 0;
+   object-fit: contain;
+   margin: 20px auto;
 }
 
 input[type="radio"] {
@@ -31,23 +55,63 @@ input[type="radio"] {
     height: 0;
 }
 
-input[type="radio"]:checked ~ .img-bayan {
-    height: 250px;
-    transition: height 0.5s ease-in-out;
-}
+input[type="radio"]:checked  ~ .img-wrapper > .img-bayan{
+    height: 100%;
+    transition: height 0.5s;
+} 
 
-input[type="radio"]:checked ~ label > .icon {
+ input[type="radio"]:checked ~ .line-desc > .icon {
     transform: rotate(90deg);
 }
 
+input[type="radio"]:checked ~ .line-desc > .line-title {
+    color: black;
+}  
+
 .line {
+    display: flex;
+    overflow: hidden;
     width: 100%;
+    border-top: 0.05rem solid rgb(101, 88, 88);
+}
+
+.line-desc {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 1rem;
+    margin-bottom: -3.5rem;
+}
+
+.line-title {
+    color:blue;
+    font-size: 1.4rem;
+    font-weight: 600;
+    transition: color, 0.8s;
+    margin-right: 0.5rem;
+}
+
+@media screen and (min-width: 820px){  
+    .line-title {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (min-width: 1780px){  
+    .line-title {
+        font-size: 3rem;
+    }
 }
 
 .input-radio {
+    display: block;
     width: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
+    overflow: hidden;
+    padding-bottom: 1rem;
+    transition: height 1s;
 }
 
 .icon {
@@ -56,5 +120,45 @@ input[type="radio"]:checked ~ label > .icon {
     margin: 0;
     transform: rotate(45deg);
     transition: transform, 0.5s;
-    opacity: 0;
+    opacity: 1;
 }
+
+
+@media screen and (min-width: 820px){ 
+    .icon {
+        width: 50px;
+        height: 50px;
+    }
+ }
+
+
+@media screen and (any-hover: hover){ 
+    .icon {
+        opacity: 0;
+    }
+   
+        .container:hover .icon{
+          opacity: 1;
+        }
+     
+        .container:hover .line-desc {
+            color: black;
+        }
+     }
+
+
+@media (any-hover: hover) { 
+
+    .input-radio:hover .img-bayan{
+        height: 100%;
+        transition: height 0.8s;
+    }
+
+    .input-radio:active {
+       opacity: 0.5;
+    }
+
+    .input-radio:hover .icon {
+        transform: rotate(90deg);
+ } 
+}  
