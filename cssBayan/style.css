@@ -18,24 +18,6 @@
     margin-top: 1rem;
 }
 
-@media screen and (min-width: 820px){ 
-    .bayan-title {
-        font-size: 4rem;
-        font-weight: 700;
-        margin-bottom: 1.5rem;
-        margin-top: 1.5rem;
-    }
-}
-
-@media screen and (min-width: 1780px){  
-    .bayan-title {
-        font-size: 6rem;
-        font-weight: 700;
-        margin-bottom: 3rem;
-        margin-top: 3rem;
-    }
-}
-
 .img-wrapper {
    width: 100%;
    padding-top: 20px;
@@ -91,18 +73,6 @@ input[type="radio"]:checked ~ .line-desc > .line-title {
     margin-right: 0.5rem;
 }
 
-@media screen and (min-width: 820px){  
-    .line-title {
-        font-size: 2rem;
-    }
-}
-
-@media screen and (min-width: 1780px){  
-    .line-title {
-        font-size: 3rem;
-    }
-}
-
 .input-radio {
     display: block;
     width: 100%;
@@ -122,43 +92,3 @@ input[type="radio"]:checked ~ .line-desc > .line-title {
     transition: transform, 0.5s;
     opacity: 1;
 }
-
-
-@media screen and (min-width: 820px){ 
-    .icon {
-        width: 50px;
-        height: 50px;
-    }
- }
-
-
-@media screen and (any-hover: hover){ 
-    .icon {
-        opacity: 0;
-    }
-   
-        .container:hover .icon{
-          opacity: 1;
-        }
-     
-        .container:hover .line-desc {
-            color: black;
-        }
-     }
-
-
-@media (any-hover: hover) { 
-
-    .input-radio:hover .img-bayan{
-        height: 100%;
-        transition: height 0.8s;
-    }
-
-    .input-radio:active {
-       opacity: 0.5;
-    }
-
-    .input-radio:hover .icon {
-        transform: rotate(90deg);
- } 
-}  

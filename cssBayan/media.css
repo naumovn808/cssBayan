@@ -1,0 +1,71 @@
+@media screen and (min-width: 820px){ 
+    .bayan-title {
+        font-size: 4rem;
+        font-weight: 700;
+        margin-bottom: 1.5rem;
+        margin-top: 1.5rem;
+    }
+}
+
+@media screen and (min-width: 1920px){  
+    .bayan-title {
+        font-size: 6rem;
+        margin-bottom: 3rem;
+        margin-top: 3rem;
+    }
+}
+
+@media screen and (min-width: 820px){  
+    .line-title {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (min-width: 1920px){  
+    .line-title {
+        font-size: 3rem;
+    }
+}
+
+@media screen and (min-width: 820px){ 
+    .icon {
+        width: 50px;
+        height: 50px;
+    }
+ }
+
+@media screen and (any-hover: hover){ 
+    .icon {
+        opacity: 0;
+    }
+   
+        .container:hover .icon{
+          opacity: 1;
+        }
+     
+        .container:hover .line-desc {
+            color: black;
+        }
+     }
+
+@media (any-hover: hover) { 
+
+    .input-radio:hover .img-bayan{
+        height: 100%;
+        transition: height 0.8s;
+    }
+
+    .input-radio:active {
+       opacity: 0.5;
+    }
+
+    .input-radio:hover .icon {
+        transform: rotate(90deg);
+ } 
+}  
+
+@media screen and (min-width: 820px){ 
+    .img-bayan {
+        max-width: 450px;
+    }
+}
